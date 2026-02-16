@@ -1,0 +1,172 @@
+wsl: Failed to start the systemd user session for 'claud'. See journalctl for more details.
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Feb 13 08:57:23 -03 2026
+
+  System load:  2.0                 Processes:             37
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       0
+  Memory usage: 7%                  IPv4 address for eth0: 172.18.39.83
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/claud/.hushlogin file.
+claud@ClaudianePC:~$ nano rotina_script.sh
+claud@ClaudianePC:~$ 11
+11: command not found
+claud@ClaudianePC:~$ ll
+total 52
+drwxr-x--- 5 claud claud 4096 Feb 13 09:30 ./
+drwxr-xr-x 3 root  root  4096 Feb 11 13:51 ../
+-rw------- 1 claud claud  645 Feb 12 20:35 .bash_history
+-rw-r--r-- 1 claud claud  220 Feb 11 13:51 .bash_logout
+-rw-r--r-- 1 claud claud 3771 Feb 11 13:51 .bashrc
+drwx------ 2 claud claud 4096 Feb 11 13:55 .cache/
+drwxr-xr-x 2 claud claud 4096 Feb 13 08:57 .landscape/
+drwxr-xr-x 3 claud claud 4096 Feb 11 15:52 .local/
+-rw-rw-r-- 1 claud claud    0 Feb 13 08:57 .motd_shown
+-rw-r--r-- 1 claud claud  807 Feb 11 13:51 .profile
+-rw-r--r-- 1 claud claud    0 Feb 11 14:42 .sudo_as_admin_successful
+-rw------- 1 root  root     1 Feb 12 20:15 nano.1317.save
+-rw------- 1 root  root   211 Feb 12 20:18 nano.1427.save
+-rw------- 1 root  root    79 Feb 12 20:35 nano.1450.save
+-rw-r--r-- 1 claud claud  159 Feb 13 09:30 rotina_script.sh
+claud@ClaudianePC:~$ chmod +x rotina_script.sh
+claud@ClaudianePC:~$ ll
+total 52
+drwxr-x--- 5 claud claud 4096 Feb 13 09:30 ./
+drwxr-xr-x 3 root  root  4096 Feb 11 13:51 ../
+-rw------- 1 claud claud  645 Feb 12 20:35 .bash_history
+-rw-r--r-- 1 claud claud  220 Feb 11 13:51 .bash_logout
+-rw-r--r-- 1 claud claud 3771 Feb 11 13:51 .bashrc
+drwx------ 2 claud claud 4096 Feb 11 13:55 .cache/
+drwxr-xr-x 2 claud claud 4096 Feb 13 08:57 .landscape/
+drwxr-xr-x 3 claud claud 4096 Feb 11 15:52 .local/
+-rw-rw-r-- 1 claud claud    0 Feb 13 08:57 .motd_shown
+-rw-r--r-- 1 claud claud  807 Feb 11 13:51 .profile
+-rw-r--r-- 1 claud claud    0 Feb 11 14:42 .sudo_as_admin_successful
+-rw------- 1 root  root     1 Feb 12 20:15 nano.1317.save
+-rw------- 1 root  root   211 Feb 12 20:18 nano.1427.save
+-rw------- 1 root  root    79 Feb 12 20:35 nano.1450.save
+-rwxr-xr-x 1 claud claud  159 Feb 13 09:30 rotina_script.sh*
+claud@ClaudianePC:~$ chown +w rotina_script.sh
+chown: invalid user: ‘+w’
+claud@ClaudianePC:~$ ll
+total 52
+drwxr-x--- 5 claud claud 4096 Feb 13 09:30 ./
+drwxr-xr-x 3 root  root  4096 Feb 11 13:51 ../
+-rw------- 1 claud claud  645 Feb 12 20:35 .bash_history
+-rw-r--r-- 1 claud claud  220 Feb 11 13:51 .bash_logout
+-rw-r--r-- 1 claud claud 3771 Feb 11 13:51 .bashrc
+drwx------ 2 claud claud 4096 Feb 11 13:55 .cache/
+drwxr-xr-x 2 claud claud 4096 Feb 13 08:57 .landscape/
+drwxr-xr-x 3 claud claud 4096 Feb 11 15:52 .local/
+-rw-rw-r-- 1 claud claud    0 Feb 13 08:57 .motd_shown
+-rw-r--r-- 1 claud claud  807 Feb 11 13:51 .profile
+-rw-r--r-- 1 claud claud    0 Feb 11 14:42 .sudo_as_admin_successful
+-rw------- 1 root  root     1 Feb 12 20:15 nano.1317.save
+-rw------- 1 root  root   211 Feb 12 20:18 nano.1427.save
+-rw------- 1 root  root    79 Feb 12 20:35 nano.1450.save
+-rwxr-xr-x 1 claud claud  159 Feb 13 09:30 rotina_script.sh*
+claud@ClaudianePC:~$ chmod u+rw rotina_script.sh
+claud@ClaudianePC:~$ ll
+total 52
+drwxr-x--- 5 claud claud 4096 Feb 13 09:30 ./
+drwxr-xr-x 3 root  root  4096 Feb 11 13:51 ../
+-rw------- 1 claud claud  645 Feb 12 20:35 .bash_history
+-rw-r--r-- 1 claud claud  220 Feb 11 13:51 .bash_logout
+-rw-r--r-- 1 claud claud 3771 Feb 11 13:51 .bashrc
+drwx------ 2 claud claud 4096 Feb 11 13:55 .cache/
+drwxr-xr-x 2 claud claud 4096 Feb 13 08:57 .landscape/
+drwxr-xr-x 3 claud claud 4096 Feb 11 15:52 .local/
+-rw-rw-r-- 1 claud claud    0 Feb 13 08:57 .motd_shown
+-rw-r--r-- 1 claud claud  807 Feb 11 13:51 .profile
+-rw-r--r-- 1 claud claud    0 Feb 11 14:42 .sudo_as_admin_successful
+-rw------- 1 root  root     1 Feb 12 20:15 nano.1317.save
+-rw------- 1 root  root   211 Feb 12 20:18 nano.1427.save
+-rw------- 1 root  root    79 Feb 12 20:35 nano.1450.save
+-rwxr-xr-x 1 claud claud  159 Feb 13 09:30 rotina_script.sh*
+claud@ClaudianePC:~$ chmod o+r rotina_script.sh
+claud@ClaudianePC:~$ ll
+total 52
+drwxr-x--- 5 claud claud 4096 Feb 13 09:30 ./
+drwxr-xr-x 3 root  root  4096 Feb 11 13:51 ../
+-rw------- 1 claud claud  645 Feb 12 20:35 .bash_history
+-rw-r--r-- 1 claud claud  220 Feb 11 13:51 .bash_logout
+-rw-r--r-- 1 claud claud 3771 Feb 11 13:51 .bashrc
+drwx------ 2 claud claud 4096 Feb 11 13:55 .cache/
+drwxr-xr-x 2 claud claud 4096 Feb 13 08:57 .landscape/
+drwxr-xr-x 3 claud claud 4096 Feb 11 15:52 .local/
+-rw-rw-r-- 1 claud claud    0 Feb 13 08:57 .motd_shown
+-rw-r--r-- 1 claud claud  807 Feb 11 13:51 .profile
+-rw-r--r-- 1 claud claud    0 Feb 11 14:42 .sudo_as_admin_successful
+-rw------- 1 root  root     1 Feb 12 20:15 nano.1317.save
+-rw------- 1 root  root   211 Feb 12 20:18 nano.1427.save
+-rw------- 1 root  root    79 Feb 12 20:35 nano.1450.save
+-rwxr-xr-x 1 claud claud  159 Feb 13 09:30 rotina_script.sh*
+claud@ClaudianePC:~$ chmod g-x rotina_script.sh
+claud@ClaudianePC:~$ ll
+total 52
+drwxr-x--- 5 claud claud 4096 Feb 13 09:30 ./
+drwxr-xr-x 3 root  root  4096 Feb 11 13:51 ../
+-rw------- 1 claud claud  645 Feb 12 20:35 .bash_history
+-rw-r--r-- 1 claud claud  220 Feb 11 13:51 .bash_logout
+-rw-r--r-- 1 claud claud 3771 Feb 11 13:51 .bashrc
+drwx------ 2 claud claud 4096 Feb 11 13:55 .cache/
+drwxr-xr-x 2 claud claud 4096 Feb 13 08:57 .landscape/
+drwxr-xr-x 3 claud claud 4096 Feb 11 15:52 .local/
+-rw-rw-r-- 1 claud claud    0 Feb 13 08:57 .motd_shown
+-rw-r--r-- 1 claud claud  807 Feb 11 13:51 .profile
+-rw-r--r-- 1 claud claud    0 Feb 11 14:42 .sudo_as_admin_successful
+-rw------- 1 root  root     1 Feb 12 20:15 nano.1317.save
+-rw------- 1 root  root   211 Feb 12 20:18 nano.1427.save
+-rw------- 1 root  root    79 Feb 12 20:35 nano.1450.save
+-rwxr--r-x 1 claud claud  159 Feb 13 09:30 rotina_script.sh*
+claud@ClaudianePC:~$ chmod o-x rotina_script.sh
+claud@ClaudianePC:~$ ll
+total 52
+drwxr-x--- 5 claud claud 4096 Feb 13 09:30 ./
+drwxr-xr-x 3 root  root  4096 Feb 11 13:51 ../
+-rw------- 1 claud claud  645 Feb 12 20:35 .bash_history
+-rw-r--r-- 1 claud claud  220 Feb 11 13:51 .bash_logout
+-rw-r--r-- 1 claud claud 3771 Feb 11 13:51 .bashrc
+drwx------ 2 claud claud 4096 Feb 11 13:55 .cache/
+drwxr-xr-x 2 claud claud 4096 Feb 13 08:57 .landscape/
+drwxr-xr-x 3 claud claud 4096 Feb 11 15:52 .local/
+-rw-rw-r-- 1 claud claud    0 Feb 13 08:57 .motd_shown
+-rw-r--r-- 1 claud claud  807 Feb 11 13:51 .profile
+-rw-r--r-- 1 claud claud    0 Feb 11 14:42 .sudo_as_admin_successful
+-rw------- 1 root  root     1 Feb 12 20:15 nano.1317.save
+-rw------- 1 root  root   211 Feb 12 20:18 nano.1427.save
+-rw------- 1 root  root    79 Feb 12 20:35 nano.1450.save
+-rwxr--r-- 1 claud claud  159 Feb 13 09:30 rotina_script.sh*
+claud@ClaudianePC:~$ chmod u+7 rotina_script.sh
+chmod: invalid mode: ‘u+7’
+Try 'chmod --help' for more information.
+claud@ClaudianePC:~$ chmod 744 rotina_script.sh
+claud@ClaudianePC:~$ ll
+total 52
+drwxr-x--- 5 claud claud 4096 Feb 13 09:30 ./
+drwxr-xr-x 3 root  root  4096 Feb 11 13:51 ../
+-rw------- 1 claud claud  645 Feb 12 20:35 .bash_history
+-rw-r--r-- 1 claud claud  220 Feb 11 13:51 .bash_logout
+-rw-r--r-- 1 claud claud 3771 Feb 11 13:51 .bashrc
+drwx------ 2 claud claud 4096 Feb 11 13:55 .cache/
+drwxr-xr-x 2 claud claud 4096 Feb 13 08:57 .landscape/
+drwxr-xr-x 3 claud claud 4096 Feb 11 15:52 .local/
+-rw-rw-r-- 1 claud claud    0 Feb 13 08:57 .motd_shown
+-rw-r--r-- 1 claud claud  807 Feb 11 13:51 .profile
+-rw-r--r-- 1 claud claud    0 Feb 11 14:42 .sudo_as_admin_successful
+-rw------- 1 root  root     1 Feb 12 20:15 nano.1317.save
+-rw------- 1 root  root   211 Feb 12 20:18 nano.1427.save
+-rw------- 1 root  root    79 Feb 12 20:35 nano.1450.save
+-rwxr--r-- 1 claud claud  159 Feb 13 09:30 rotina_script.sh*
+claud@ClaudianePC:~$
