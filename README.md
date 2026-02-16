@@ -1,2 +1,2 @@
-No terminal claud@ClaudianePC~.txt, use o comando nano rotina_script.sh, para então, executar o script. 
-Um pequeno texto escrito para apresentar um pouco do meu conhecimento em Linux.
+Acredito que não terá dificuldade em acessar e ler o arquivo.
+Pois o objetivo foi para escrever e automatizar um pequeno texto, apresentando um pouco do meu conhecimento em Linux.
